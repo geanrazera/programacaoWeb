@@ -1,0 +1,19 @@
+a:hover { text-transform: uppercase;
+          font-weight: bold;
+          color:blue;
+          background-color: yellow;
+}
+
+a:visited { color:yellow; } 
+
+a:active { background-color: red; }
+
+a:link { color:red; }
+
+a { color: blue; }
+
+a.tabuleiro { color: #FFBB00; }
+
+.tabuleiro { color: red }
+
+a.cartas { color: #800000; }

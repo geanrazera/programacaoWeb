@@ -1,0 +1,12 @@
+h1{ color: blue }
+h2{ color: red }
+h3{ color: yellow }
+
+p{ color: teal}
+
+body{ background-image: url("banner.jpg");
+       background-color: silver;    
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-attachment: scroll; 
+    }
