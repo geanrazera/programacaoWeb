@@ -1,0 +1,63 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.ingles {
+    text-align: right;
+    font-family: Arial;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.traducao {
+    text-align: left;
+    font-family: Arial Narrow;
+    padding-left: 10px;
+    flex: 1;
+}
+
+P:first-letter { 
+    font-size: 150%; 
+    color: grey; font-weight: bold; 
+}
+
+#banda{
+    font-family: Arial Black;
+    text-align: center;
+}
+
+a:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+a:visited { 
+    color: cornflowerblue; 
+}
+
+a:active { 
+    background-color: darkcyan; 
+}
+
+a:link { 
+    color: cadetblue;
+}
+
+#nome{
+    width: 205px;
+    margin: 2px 0px 2px 31px;
+}
+
+#email{
+    width: 205px;
+    margin: 2px 0px 2px 32px;
+}
+
+#mensagem{
+    width: 205px;
+}

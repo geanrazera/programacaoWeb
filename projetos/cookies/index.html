@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cookie</title>
+
+    <script>
+        function gerarCookie (cname, cvalue, exdays){
+            var data = new Date();
+            data.setTime(data.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + data.toUTCString();
+            document.cookie = cname + "=" + escape(cvalue) + ";" + expires;
+        }
+
+        function procurarCookie(cname){
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function validarCookie() {
+            var nome = procurarCookie("email");
+            if (nome != "") {
+                alert("Seu email é "+ nome);
+                if (confirm("Caso esse nao seja seu E-mail, deseja altera-lo? ")) {
+                    nome = prompt("Informe seu email:");
+                    if (nome != "" && nome != null) {
+                        criarCookie("email", nome, 365);
+                    }
+
+                }
+            }
+            else {
+                nome = prompt("Informe seu email:");
+                if (nome != "" && nome != null) {
+                    criarCookie("email", nome, 365);
+                }
+            }
+    </script>
+</head>
+<body>
+    <button onclick="validarCookie()"> Adicionar e-mail</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trabalhando com cookies</title>
+    <script>
+        function ler(){
+            var partes = document.cookie.split('=') // ['nome', 'Gean%20Razera']
+            var valor = partes[1] // 'Gean%20Razera'
+            var valorDecodificado = unescape(valor) // 'Gean Razera'
+            alert('Seu nome é: ' + valorDecodificado)
+        }
+        function gravar(){
+            var nome = prompt('Informe o seu nome:'); // 'Gean Razera'
+            var nomeCodificado = escape(nome); // 'Gean%20Razera'
+            document.cookie = 'nome=' + nomeCodificado; // ['nome', 'Gean%20Razera']
+            alert('Obrigado!')
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ler()">Ler</button>
+    <br/>
+    <button onclick="gravar()">Gravar</button>
+</body>
+</html>

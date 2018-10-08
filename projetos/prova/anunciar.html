@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anunciar</title>
+    <script type="text/javascript" src="js/anunciar.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/anunciar.css" />
+</head>
+
+<body>
+    <form name="anunciar">
+        <label>Título: </label><br />
+        <input type="text" name="titulo" value="">*<br />
+        <label>Descrição do anuncio: </label><br />
+        <textarea name="desc" value=""></textarea><br />
+        <label>Ano do carro: </label><br />
+        <input type="number" name="ano" value="">*<br />
+        <label>Quilometragem do carro: </label><br />
+        <input type="number" name="km" value="">*<br />
+        <label>Valor do carro: </label><br />
+        <input type="text" name="valor" value="">*<br />
+        <label>Combustível: </label><br />
+        <input type="radio" name="combustivel" value="gasolina"> Gasolina
+        <input type="radio" name="combustivel" value="etanol"> Etanol
+        <input type="radio" name="combustivel" value="diesel"> Diesel
+        <input type="radio" name="combustivel" value="flex"> Flex *
+        <br />
+        <label>Imagem do carro:</label>
+        <input type="file" name="imagem">*
+        <br />
+        <input type="button" value="Enviar" onclick="validaForm()">
+        <br /><br />
+        <label class="vermelho">Campos com (*) são obrigatórios.</label>
+    </form>
+
+</body>
+
+</html>

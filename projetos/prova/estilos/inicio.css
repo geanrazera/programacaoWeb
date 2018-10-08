@@ -1,0 +1,77 @@
+ul.toolBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+
+ul.busca {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li.esquerdaBar {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.flex2 {
+    display: flex;
+     
+    
+    background-color: white;
+}
+
+.direita {
+    font-family: Arial;
+    padding-right: 10px;
+    flex: 3;
+}
+
+.esquerda {
+    font-family: Arial Narrow;
+    padding-left: 10px;
+    flex: 1;
+}
+
+
+table.categorias {
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+
+th {
+    background-color:whitesmoke;
+}
+th, td {
+    padding: 10px;
+}
